@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">My<span>Portfolio</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="slide-in-left">Hi, I'm <span class="highlight">Mustapha ACHAOUD</span></h1>
+                <h2 class="slide-in-left" style="animation-delay: 0.2s">Web Developer & Designer</h2>
+                <p class="slide-in-left" style="animation-delay: 0.4s">I create beautiful and functional websites that help businesses grow.</p>
+                <div class="cta-buttons slide-in-left" style="animation-delay: 0.6s">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-icons slide-in-left" style="animation-delay: 0.8s">
+                    <a href="https://github.com/Mustaphaach"><i class="fab fa-github"></i></a>
+                    <a href="https://shorturl.at/PlrBy"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image slide-in-bottom">
+                <img src="images/me.png" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <img src="images/me2.png" alt="About Me">
+                </div>
+                <div class="about-text reveal" style="transition-delay: 0.2s">
+                    <h3>Who I Am</h3>
+                    <p>I'm a passionate web developer with two years of experience in building responsive, user-friendly websites. During my internships, I developed websites for agencies, honing my skills in modern web technologies.</p>
+                    <p>Beyond web development, I have expertise in SEO, data scraping, and AI-powered website generation, ensuring high-quality and optimized results. I'm also a dedicated researcher and a responsible team player who thrives in both collaborative and independent work environments. Constantly learning and improving, I strive to deliver the best solutions for every project.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Mustapha ACHAOUD</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>ACHAOUD.Mustapha@Gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Location:</span>
+                            <p>LAAZIB EL KOLEA AIT MELLOUL AGADIR, Morocco</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Availability:</span>
+                            <p>Freelance / Full-time</p>
+                            <p>Remotly Work</p>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" class="btn primary-btn" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="images/hotel.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>hotel-etoiles-toubkal </h3>
+                        <p>A fully responsive Hotel platform built with Wordpress, PhP.</p>
+                        <div class="project-tags">
+                            <span>Wordpress</span>
+                            <span>PhP</span>
+                            <span>Css,Html</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hotel-etoiles-toubkal.com/" class="btn small-btn">View Live</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="images/gafiam.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Gafiam Engineering</h3>
+                        <p>A productivity app that helps users organize their daily tasks.</p>
+                        <div class="project-tags">
+                            <span>PhP</span>
+                            <span>Wordpress</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://gafiam.com/" class="btn small-btn">View Live</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="/images/espace.png" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>espacetourisme</h3>
+                        <p>A clean and modern portfolio website for a photographer.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://espacetourisme.com/" class="btn small-btn">View Live</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 4 -->
+                 <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="images/car.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Babacar </h3>
+                        <p>A fully responsive Hotel platform built with Wordpress, PhP.</p>
+                        <div class="project-tags">
+                            <span>Wordpress</span>
+                            <span>PhP</span>
+                            <span>Css,Html</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.babacar.ma/" class="btn small-btn">View Live</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 5 -->
+                 <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="images/Best.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Best Home Agadir</h3>
+                        <p>A fully responsive Hotel platform built with Wordpress, PhP.</p>
+                        <div class="project-tags">
+                            <span>Wordpress</span>
+                            <span>PhP</span>
+                            <span>Css,Html</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://besthomeagadir.com/" class="btn small-btn">View Live</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 6 -->
+                 <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="images/hotel.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>hotel-etoiles-toubkal </h3>
+                        <p>A fully responsive Hotel platform built with Wordpress, PhP.</p>
+                        <div class="project-tags">
+                            <span>Wordpress</span>
+                            <span>PhP</span>
+                            <span>Css,Html</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hotel-etoiles-toubkal.com/" class="btn small-btn">View Live</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="view-more reveal">
+                <a href="#" class="btn primary-btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-text reveal">
+                    <h3>What I'm Capable Of</h3>
+                    <p>I specialize in building modern, responsive websites and web applications, with a strong focus on front-end development and delivering seamless user experiences.</p>
+                    <p>My expertise extends beyond development—I have knowledge of SEO, lead generation, and data-driven research, allowing me to optimize websites for better visibility and engagement. I’m also skilled in debugging and problem-solving, always finding efficient solutions to challenges.</p>
+                </div>
+                <div class="skills-bars reveal" style="transition-delay: 0.2s">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>HTML/CSS</h4>
+                            <p>95%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Wordpress</h4>
+                            <p>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <p>80%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>PhP</h4>
+                            <p>75%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack reveal">
+                <h3>Technologies I Work With</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-php"></i>
+                        <p>PhP</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <p>Wordpress</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-c"></i>
+                        <p>C</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-windows"></i>
+                        <p>Windows</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-linux"></i>
+                        <p>linux</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-ubuntu"></i>
+                        <p>ubuntu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What My Clients Say</h2>
+        
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card reveal">
+                <div class="testimonial-header">
+                    <div class="client-image">
+                        <img src="images/Aissam Errachdi.jpg" alt="John Smith">
+                    </div>
+                    <div class="client-info">
+                        <h3>Aissam Errachdi</h3>
+                        <p class="client-title">The founder of @rankup.ma</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with Mustapha was an absolute pleasure. Their attention to detail and creative approach to web development resulted in a website that exceeded our expectations. The project was delivered on time and within budget, and their communication throughout was exceptional."
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card reveal">
+                <div class="testimonial-header">
+                    <div class="client-image">
+                        <img src="images/Noman.jpg" alt="Sarah Johnson">
+                    </div>
+                    <div class="client-info">
+                        <h3>Noman Jawaid</h3>
+                        <p class="client-title">Owner Of weblifymedia agency</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Mustapha transformed our outdated website into a modern, high-performing digital asset. Their technical expertise and design sensibility helped us achieve a 40% increase in user engagement. I would recommend their services to any business looking for top-quality web development."
+                    </p>
+                </div>
+            </div>
+             <!-- Testimonial 2 -->
+             <div class="testimonial-card reveal">
+                <div class="testimonial-header">
+                    <div class="client-image">
+                        <img src="images/tes1.jfif" alt="Sarah Johnson">
+                    </div>
+                    <div class="client-info">
+                        <h3>Yasmin J</h3>
+                        <p class="client-title">Marketing Director at DigitalAgency</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Mustapha transformed our outdated website into a modern, high-performing digital asset. Their technical expertise and design sensibility helped us achieve a 40% increase in user engagement. I would recommend their services to any business looking for top-quality web development."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for any questions or opportunities.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ACHAOUD.MUSTAPHA@GMAIL.COM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+212 713272862</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>LAAZIB EL KOLEA AIT MELLOUL AGADIR, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Mustaphaach"><i class="fab fa-github"></i></a>
+                        <a href="https://shorturl.at/PlrBy"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form reveal" style="transition-delay: 0.2s">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                        <p id="form-status" style="display:none; color:green; margin-top:10px;">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">My<span>Portfolio</span></a>
+                </div>
+                <p>© 2025 Mustapha ACHAOUD. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Mustaphaach"><i class="fab fa-github"></i></a>
+                    <a href="https://shorturl.at/PlrBy"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
